@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Muly&display=swap");
+
+* {
+    box-sizing: border-box;
+    
+
+}
+body {
+    /* background-color: lightslategray; */
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    /* border: solid red; */
+    height: 90vh;
+    overflow: hidden;
+    margin: 20 10 20 10;
+
+}
+
+.container {
+    text-align: center;
+    /* border: dashed; */
+
+}
+
+.progress-container {
+    display: flex;
+    /* border: solid; */
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.progress-container::before {
+    /* border: solid red; */
+    content: '';
+    background-color: gray;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    /* left: 0; */
+    height: 4px;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.progress {
+    /* border: solid red; */
+    background-color: blue;
+    position: absolute;
+    width: 0%;
+    top: 50%;
+    /* left: 0;  */
+    height: 4px;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+
+.step   {
+    background-color: white;
+    color: #999;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    transition: 0.7s ease-out;
+}
+
+.step.active    {
+    background-color: blue;
+    border-color: blue;
+    transition: 0.3s 0.2s ease;
+}
+
+
+
+.btn.muted  {
+    color: gray;
+    cursor: not-allowed;
+    pointer-events: none;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Progress, step by step</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Progress, step by step
+
+        </h1>
+        <div class="progress-container" id="progress-ind">
+            <!-- this progress-container is styled with ::before for a progress indicator (the background bar) -->
+            <div id="progress-bar" class="progress"></div>
+            <!-- this progress element is styled as a blue bar in front of the progress indicator -->
+            <div class="step active" id="1">1</div>
+            <div class="step" id="2">2</div>
+            <div class="step" id="3">3</div>
+            <div class="step" id="4">4</div>
+        </div>
+        <button class="btn start-btn" id="jump-to-start-btn"><<</button>
+        <button class="btn" id="prev-btn"><</button>
+        <button class="btn" id="next-btn">></button>
+        <button class="btn end-btn" id="jump-to-end-btn">>></button>
+
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
